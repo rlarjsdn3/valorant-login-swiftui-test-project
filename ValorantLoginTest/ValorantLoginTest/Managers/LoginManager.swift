@@ -5,6 +5,7 @@
 //  Created by 김건우 on 2023/09/06.
 //
 
+import SwiftUI
 import Foundation
 
 struct AuthCookieBody: Codable {
@@ -78,7 +79,10 @@ struct SkinPanelLayout: Codable {
     }
 }
 
-final class LoginManager {
+final class LoginManager: ObservableObject {
+    
+    @AppStorage("isAuthenticated") var isAuthenticated: Bool = false
+    @Published var skinsUuid: [String] = []
     
     // 로그인하여 계정 기본 정보를 콘솔에 출력하고, 무기 스킨의 고유 UUID를 반환하는 함수
     func run(username: String, password: String) async -> [String]? {
@@ -267,6 +271,13 @@ final class LoginManager {
             return nil
         }
         print("⭐️Weapon Skin UUID: \(skinsUuid)")
+        
+        DispatchQueue.main.async {
+            // 인증 여부를 true로 변경하기
+            self.isAuthenticated = true
+            // 스킨 UUID 저장하기
+            self.skinsUuid = skinsUuid
+        }
         
         // 스킨 UUID 반환하기
         return skinsUuid

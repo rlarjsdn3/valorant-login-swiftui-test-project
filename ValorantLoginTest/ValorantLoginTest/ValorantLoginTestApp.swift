@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ValorantLoginTestApp: App {
+    
+    @StateObject var loginManager = LoginManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(loginManager)
         }
     }
 }

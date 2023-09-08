@@ -13,6 +13,8 @@
 		9EEC72BC2AA8B845002093B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC72BB2AA8B845002093B2 /* Assets.xcassets */; };
 		9EEC72BF2AA8B845002093B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC72BE2AA8B845002093B2 /* Preview Assets.xcassets */; };
 		9EEC72C82AA8B96B002093B2 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC72C72AA8B96B002093B2 /* LoginManager.swift */; };
+		9EF4F5D62AAB68700009C707 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4F5D52AAB68700009C707 /* LoginView.swift */; };
+		9EF4F5D82AAB69470009C707 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4F5D72AAB69470009C707 /* ShopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		9EEC72BB2AA8B845002093B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EEC72BE2AA8B845002093B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9EEC72C72AA8B96B002093B2 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		9EF4F5D52AAB68700009C707 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9EF4F5D72AAB69470009C707 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				9EEC72B92AA8B844002093B2 /* ContentView.swift */,
+				9EF4F5D52AAB68700009C707 /* LoginView.swift */,
+				9EF4F5D72AAB69470009C707 /* ShopView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF4F5D82AAB69470009C707 /* ShopView.swift in Sources */,
 				9EEC72BA2AA8B844002093B2 /* ContentView.swift in Sources */,
 				9ED3928B2AA9BA7C0055D165 /* StoreManager.swift in Sources */,
 				9EEC72B82AA8B844002093B2 /* ValorantLoginTestApp.swift in Sources */,
+				9EF4F5D62AAB68700009C707 /* LoginView.swift in Sources */,
 				9EEC72C82AA8B96B002093B2 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
